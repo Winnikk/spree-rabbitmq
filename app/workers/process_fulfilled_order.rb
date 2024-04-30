@@ -16,7 +16,7 @@ class ProcessFulfilledOrder
 
     ack!
   rescue StandardError => e
-    pp e
+    # Add logging mechanism
     reject!
   end
 
